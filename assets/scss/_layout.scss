@@ -4,8 +4,15 @@ html {
 
 .main-grid {
 	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: repeat(14, auto);
+}
+
+.sub-grid {
+	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(14, auto);
+	width: 100%;
 }
 
 h1 {
@@ -14,6 +21,11 @@ h1 {
 
 	&.service {
 		background-color: $service;
+		grid-column: 1;
+	}
+
+	&.disabled {
+		background-color: $gray-600;
 	}
 }
 
