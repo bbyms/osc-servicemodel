@@ -19,9 +19,19 @@ h1 {
 	grid-column: 1;
 	background-color: $component;
 
+	&:hover {
+		background-color: darken($component, 10%);
+		transition: all .3s ease-in-out;
+	}
+
 	&.service {
 		background-color: $service;
 		grid-column: 1;
+
+		&:hover {
+			background-color: darken($service, 10%);
+			transition: all .3s ease-in-out;
+		}
 	}
 
 	&.disabled {
@@ -32,11 +42,21 @@ h1 {
 h2 {
 	grid-column: 2;
 	background-color: $dimension;
+
+	&:hover {
+		background-color: darken($dimension, 10%);
+		transition: all .3s ease-in-out;
+	}
 }
 
 h3 {
 	grid-column: 3;
 	background-color: $element;
+
+	&:hover {
+		background-color: darken($element, 10%);
+		transition: all .3s ease-in-out;
+	}
 }
 
 h1,

@@ -14481,10 +14481,16 @@ h1 {
   -ms-grid-column: 1;
   grid-column: 1;
   background-color: #4792C6; }
+  h1:hover {
+    background-color: #3477a6;
+    transition: all .3s ease-in-out; }
   h1.service {
     background-color: #0A6EB4;
     -ms-grid-column: 1;
     grid-column: 1; }
+    h1.service:hover {
+      background-color: #075084;
+      transition: all .3s ease-in-out; }
   h1.disabled {
     background-color: #99A4B5; }
 
@@ -14492,11 +14498,17 @@ h2 {
   -ms-grid-column: 2;
   grid-column: 2;
   background-color: #84B6D9; }
+  h2:hover {
+    background-color: #5d9fcd;
+    transition: all .3s ease-in-out; }
 
 h3 {
   -ms-grid-column: 3;
   grid-column: 3;
   background-color: #C1DAEC; }
+  h3:hover {
+    background-color: #9ac3e0;
+    transition: all .3s ease-in-out; }
 
 h1,
 h2,
